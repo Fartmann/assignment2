@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Libre Franklin' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and News App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Weather</h1>
+            <input type="text" id="cityInput" placeholder="Enter a city">
+            <button id="getWeather">Get Weather</button>
+            <div id="weatherDisplay"></div>
+            <div id="currencyDisplay" class="currency-card">
+                <h2>Currency</h2>
+                <p>Base Currency: <input type="text" id="baseCurrencyInput" placeholder="e.g., USD"></p>
+                <button id="getCurrency">Get Rates</button>
+                <div id="currencyRates"></div>
+            </div>
+        </div>
+        <div>
+            <h1>Map</h1>
+            <div id="map"></div>
+            <div id="newsDisplay"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
